@@ -21,7 +21,10 @@ const UserPage = ({ userId }) => {
                 <Qualities qualities={user.qualities} />
                 <p>completedMeetings: {user.completedMeetings}</p>
                 <h2>Rate: {user.rate}</h2>
-                <button onClick={handleClick}> Все Пользователи</button>
+                <button onClick={handleClick} className="btn btn-info">
+                    {" "}
+                    Все Пользователи
+                </button>
             </div>
         );
     } else {
